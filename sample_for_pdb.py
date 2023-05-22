@@ -152,7 +152,6 @@ def sample(config, center, outdir, pdb_path, device="cuda:1", bbox_size=23.0):
         num_bond_types=3,
     ).to(device)
     model.load_state_dict(ckpt["model"])
-i
     # Sampling
     # The algorithm is the same as the one `sample.py`.
 
