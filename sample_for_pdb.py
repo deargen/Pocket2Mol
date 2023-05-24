@@ -6,12 +6,9 @@ from Bio import BiopythonWarning
 from Bio.PDB.PDBParser import PDBParser
 from Bio.PDB.Selection import unfold_entities
 from rdkit import Chem
-import sys
 
-sys.path.append("mol_gen/models/Pocket2Mol")
-
-from utils.protein_ligand import PDBProtein
-from sample import *  # Import everything from `sample.py`
+from mol_gen.models.Pocket2Mol.utils.protein_ligand import PDBProtein
+from mol_gen.models.Pocket2Mol.sample import *  # Import everything from `sample.py`
 
 
 def pdb_to_pocket_data(pdb_path, center, bbox_size):
