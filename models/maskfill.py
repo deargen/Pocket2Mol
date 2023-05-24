@@ -9,7 +9,7 @@ from .embedding import AtomEmbedding
 from .frontier import FrontierLayerVN
 from .position import PositionPredictor
 # from .debug import check_true_bonds_len, check_pred_bonds_len
-from utils.misc import unique
+from mol_gen.models.Pocket2Mol.utils.misc import unique
 
 class MaskFillModelVN(Module):
 

@@ -3,8 +3,8 @@ from torch.nn import Module, ModuleList, LeakyReLU, LayerNorm
 from torch_scatter import scatter_sum
 from math import pi as PI
 
-from models.common import GaussianSmearing, EdgeExpansion
-from models.invariant import GVLinear, VNLeakyReLU, MessageModule
+from mol_gen.models.Pocket2Mol.models.common import GaussianSmearing, EdgeExpansion
+from mol_gen.models.Pocket2Mol.models.invariant import GVLinear, VNLeakyReLU, MessageModule
 
 class CFTransformerEncoderVN(Module):
     

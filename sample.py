@@ -12,13 +12,13 @@ from easydict import EasyDict
 from tqdm.auto import tqdm
 from rdkit import Chem
 
-from models.maskfill import MaskFillModelVN
-from models.sample import *
-from utils.transforms import *
-from utils.datasets import get_dataset
-from utils.misc import *
-from utils.data import FOLLOW_BATCH
-from utils.reconstruct import *
+from mol_gen.models.Pocket2Mol.models.maskfill import MaskFillModelVN
+from mol_gen.models.Pocket2Mol.models.sample import *
+from mol_gen.models.Pocket2Mol.utils.transforms import *
+from mol_gen.models.Pocket2Mol.utils.datasets import get_dataset
+from mol_gen.models.Pocket2Mol.utils.misc import *
+from mol_gen.models.Pocket2Mol.utils.data import FOLLOW_BATCH
+from mol_gen.models.Pocket2Mol.utils.reconstruct import *
 # from utils.chem import *
 STATUS_RUNNING = 'running'
 STATUS_FINISHED = 'finished'
